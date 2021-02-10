@@ -174,3 +174,36 @@ body{
 #plus{
     display:flex;
 }
+.addToCart
+{
+    width: 25px;
+    height: 25px;
+}
+
+#notif
+{
+    display: none;
+    color:cyan;
+}
+
+tr
+{
+    background-color: white;
+}
+
+#flex
+{
+    display: flex;
+    width: 100%;
+    height:100%;
+    
+    
+    justify-content: center;
+
+}
+
+th
+{   
+    border: solid;
+    padding: 30px;
+}

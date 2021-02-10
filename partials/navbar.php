@@ -13,7 +13,7 @@
             </a>
         </li>
         <li>
-            <a href="#" >
+            <a href="?p=cart" >
                 <span class="icon"><i class="fas fa-shopping-cart"></i></span>
                 <span class="title">Cart</span>
             </a>
