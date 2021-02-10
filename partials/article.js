@@ -9,10 +9,15 @@ setTimeout(function(){
 	notif.style.display = "none";
 }, 3000);
 
+let myNewJSON = JSON.stringify(panier.json, "coucou", 'yo');
+console.log(myNewJSON)
+
+/*
 let table = document.getElementById('flex');
 let newTr = document.createElement('tr');
 let newth = document.createElement('th');
 newTr.appendChild(newth)
 table.appendChild(newTr)
 newth.innerHTML = title;
+*/
 }
