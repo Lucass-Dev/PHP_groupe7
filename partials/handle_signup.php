@@ -32,6 +32,7 @@ if(!empty($_POST)){
 
     if($errors == 0){
         $query = $db->prepare("INSERT INTO users (email,password) VALUES (?,?)");
+        $password = hash('sha256',$_POST['passw']);
         $query->execute([$email,$password]);
         $_SESSION = $email;
         header('Location: ../index.php');
