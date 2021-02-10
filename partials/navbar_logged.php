@@ -18,5 +18,11 @@
                 <span class="title">Cart</span>
             </a>
         </li>
+        <li>
+            <a href="#" >
+                <span class="icon"><i class="fas fa-reply"></i></span>
+                <span class="title">Logout</span>
+            </a>
+        </li>
     </ul>
 </div>
