@@ -1,14 +1,27 @@
 
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+
+
+
 
 $db = new PDO('mysql:host=127.0.0.1;port=3306;dbname=utilisateur', 'alban', 'alban');
-try{
+
 	$query = $db->prepare("SELECT * FROM produit");
-        $query->execute();
-        echo $query;
-    }catch{
-    	echo "bah sa marche pas";
-    }
+    $query->execute();
+	$produit = $query->fetchAll();
+	
+
+    
+for ($i=0; $i < count($produit); $i++) { 
+	
+	createArticle($produit[$i]['titre'],$produit[$i]['prix']);
+}
+
+
 
 
 
@@ -22,9 +35,7 @@ function createArticle($title, $price){
     </div>');
     echo $dom->saveHTML();
 }
-createArticle('Chaise Massante','139.99');
-createArticle('Un bureau gaming','350,50');
-createArticle('Un stylo','1.99');
+
 
 
 ?>

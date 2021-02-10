@@ -33,7 +33,7 @@ body{
     list-style: none;
 }
 .navigation ul li:hover{
-    background:#ffffff;
+    background: white;
 }
 .navigation ul li a{
     position: relative;
