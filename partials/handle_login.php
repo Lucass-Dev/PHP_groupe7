@@ -1,4 +1,5 @@
 <?php 
+    require_once '../init.php';
     require_once '../db.php';
 
     if(!empty($_POST)){
@@ -21,8 +22,8 @@
             $user = $query->fetch();
 
             if($user != null){
-                if($password == $user['password']){
-                    $_SESSION['account'] = $user['email'];
+                if(hash('sha256',$password) == $user['password']){
+                    $_SESSION['user'] = array('email' => $user['email'], 'role' => $user['role']);
                     header('Location: ../index.php');
                 }
             }

@@ -1,4 +1,6 @@
-<?php?>
+<?php
+require_once "init.php";
+?>
 
 <div class="formulaire_container">
     <h1 id="form_title">Connectez-vous</h1>

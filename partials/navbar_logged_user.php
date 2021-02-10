@@ -7,19 +7,13 @@
             </a>
         </li>
         <li>
-            <a href="?p=form_register">
-                <span class="icon"><i class="fas fa-sign-in-alt"></i></span>
-                <span class="title">Login</span>
-            </a>
-        </li>
-        <li>
             <a href="#" >
                 <span class="icon"><i class="fas fa-shopping-cart"></i></span>
                 <span class="title">Cart</span>
             </a>
         </li>
         <li>
-            <a href="#" >
+            <a href="logout.php" >
                 <span class="icon"><i class="fas fa-reply"></i></span>
                 <span class="title">Logout</span>
             </a>
