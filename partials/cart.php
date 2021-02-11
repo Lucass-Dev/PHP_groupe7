@@ -1,16 +1,58 @@
+<div id="flex">
+	<table>
+		<tr>
+			<th>titre</th>
+			<th>Quantite</th>
+			<th>Prix</th>
+		</tr>
+	</table>
+</div>
+
 
 <?php
+session_start();
 
-function createArticle(){
+function add(){
+		$verif = true;
+		$count = 0;
+		$titleCount = 'title0';
+		$title = 'title0';
+		$prix = 'prix0';
+		
+		while($verif == true){
+			
+			if(isset($_SESSION[$titleCount])){
+				$count +=1;
+				$titleCount = 'title'.$count;
+				
+				createArticle($_SESSION[$title],$_SESSION[$prix]);
+				$title = 'title'.$count;
+				
+				$prix = 'prix'.$count;
+				
+				
+			}else{
+				$title = 'title'.$count;
+				$prix = 'prix'.$count;
+				$verif = false;
+				
+			}
+		}
+	}
+add();
+
+
+function createArticle($title,$price){
+	
     $dom = new DOMDocument('1.0','UTF-8');
     $dom->loadHTML(
     '
 <div id="flex">
 	<table>
 		<tr>
-			<th>Intitule</th>
-			<th>Quantite</th>
-			<th>Prix</th>
+			<th>'.$title.'</th>
+			<th>1</th>
+			<th>'.$price.'</th>
 		</tr>
 	</table>
 </div>
@@ -18,6 +60,6 @@ function createArticle(){
     echo $dom->saveHTML();
 }
 
-createArticle();
+
 ?>
 

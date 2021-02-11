@@ -31,7 +31,7 @@ function createArticle($title, $price){
     '<div class="art">
         <h1>'.$title.'</h1>
         <span>'.$price.'</span>
-           <span><a href="partials/panier.php?info=id"><button class="addToCart"><i id="plus" class="fas fa-plus"></i></button></a></span>
+           <span><a href="partials/panier.php?title='.$title.'&amp;price='.$price.'"><button class="addToCart"><i id="plus" class="fas fa-plus"></i></button></a></span>
     </div>');
     echo $dom->saveHTML();
 }
