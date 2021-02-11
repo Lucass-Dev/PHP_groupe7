@@ -13,7 +13,7 @@
             </a>
         </li>
         <li>
-            <a href="#" >
+            <a href="?p=gestion_panel" >
                 <span class="icon"><i class="fas fa-user-cog"></i></span>
                 <span class="title">Panel</span>
             </a>

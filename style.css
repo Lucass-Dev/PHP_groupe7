@@ -176,8 +176,18 @@ body{
 }
 .addToCart
 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
     width: 25px;
     height: 25px;
+    background:none;
+    border:none;
+}
+.addToCart:hover{
+    text-decoration: none;
+    border:none;
+    color:white;
 }
 
 #notif
@@ -206,4 +216,210 @@ th
 {   
     border: solid;
     padding: 30px;
+}
+.panel_container{
+    display:flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel{
+    display:flex;
+    height:65%;
+    width: 30%;
+    background:#707070;
+    border-radius: 20px;
+    flex-direction: column;
+}
+.panel h1{
+    display:flex;
+    color:white;
+    font-size:24px;
+    margin-top:30px;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.panel_tools{
+    display:flex;
+    height:80%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.panel_tools a{
+    display:flex;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    border:#ffffff 1px solid;
+    height:10%;
+    width: 80%;
+    border-radius: 15px;
+}
+.panel_tools a span {
+    display: flex;
+    margin-right: 5%;
+
+}
+.panel_tools a span i{
+    font-size:20px;
+}
+.panel_tools a:hover{
+    text-decoration: none;
+    color:#262121;
+    background:#FEAC10;
+}
+.user_pan_container{
+    display:flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.user{
+    display:flex;
+    background:#707070;
+    height:200px;
+    width: 250px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.user h1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:20px;
+    color:white;
+}
+.user span{
+    display:flex;
+    margin-bottom: 10px;
+    color:white;
+}
+#cross{
+    display:flex;
+    color:white;
+    text-decoration: none;
+}
+#cross:hover{
+    color:white;
+    text-decoration: none;
+}
+
+#return_btn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    text-decoration: none;
+}
+#return_btn:hover{
+    color:white;
+    text-decoration: none;
+}
+.product_container{
+    display:flex;
+    height:100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+
+}
+.button_prodconf{
+    display:flex;
+    height:30%;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.prod_btn{
+    display:flex;
+    color:white;
+    background:none;
+    border:1px white solid;
+    height:70px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    user-select: none;
+}
+.prod_btn:hover{
+    color:#262121;
+    background:#FEAC10;
+    text-decoration: none;
+    
+}
+.add_product_container{
+    display:flex;
+    height:100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+
+}
+#add_form{
+    display:flex;
+    flex-direction: column;
+}
+#add_form h3{
+    color:white;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+#add_form input{
+    border:none;
+    padding:10px;
+    border-radius:10px;
+    background:none;
+    border:1px white solid;
+    color:white;
+}
+#add_form input:focus{
+    outline:none;
+}
+#add_form input:hover{
+    border:1px #FEAC10 solid;
+    transition: 0,1s;
+}
+#add_form button{
+    margin-top: 15px;
+    color:white;
+    padding:10px;
+    outline:none;
+    background: none;
+    border: 1px white solid;
+    border-radius: 10px;
+}
+#add_form button:hover{
+    color:#262121;
+    border:white 1px solid;
+    background:#FEAC10;
+    transition: 0.2s;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }

@@ -9,11 +9,11 @@
 
         if(empty($email)){
             $errors++;
-            header('Location: form_login.php');
+            header("Refresh:0");
         }
         if(empty($password)){
             $errors++;
-            header('Location: form_login.php');
+            header("Refresh:0");
         }
 
         if($errors == 0){
