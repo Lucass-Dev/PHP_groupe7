@@ -6,7 +6,7 @@
 			<th>Prix</th>
 		</tr>
 	</table>
-</div>
+<button>Validé le panier</button>
 
 
 <?php
@@ -18,13 +18,14 @@ function add(){
 		$titleCount = 'title0';
 		$title = 'title0';
 		$prix = 'prix0';
-		
+		$total = 0;
 		while($verif == true){
 			
 			if(isset($_SESSION[$titleCount])){
 				$count +=1;
 				$titleCount = 'title'.$count;
-				
+				$total = $total + intval($_SESSION[$prix]);
+
 				createArticle($_SESSION[$title],$_SESSION[$prix]);
 				$title = 'title'.$count;
 				
@@ -34,12 +35,18 @@ function add(){
 			}else{
 				$title = 'title'.$count;
 				$prix = 'prix'.$count;
+				echo $total;
 				$verif = false;
 				
 			}
 		}
 	}
 add();
+
+
+
+
+
 
 
 function createArticle($title,$price){

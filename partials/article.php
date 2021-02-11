@@ -5,7 +5,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL); */
 
 try {
-    $db = new PDO('mysql:host=127.0.0.1;port=3306;dbname=accountproj', 'root', '');
+    $db = new PDO('mysql:host=127.0.0.1;port=3306;dbname=utilisateur', 'alban', 'alban');
 }
 catch (Exception $e) {
     die('Erreur MySQL, maintenance en cours.' . $e->getMessage());
@@ -32,7 +32,6 @@ function createArticle($title, $price,$categorie){
            <span><a href="partials/panier.php?title='.$title.'&amp;price='.$price.'"><button class="addToCart"><i id="plus" class="fas fa-plus"></i></button></a></span>
 
         <span>'.$categorie.'</span>
-           <span><a href="partials/panier.php?info=id"><button class="addToCart"><i id="plus" class="fas fa-plus"></i></button></a></span>
 
     </div>');
     echo $dom->saveHTML();
