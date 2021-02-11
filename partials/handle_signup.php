@@ -11,23 +11,23 @@ if(!empty($_POST)){
 
     if(empty($name)){
         $errors++;
-        header('Location: form_register.php');
+        header("Refresh:0");
     }
     if(empty($email)){
         $errors++;
-        header('Location: form_register.php');
+        header("Refresh:0");
     }
     if(empty($password)){
         $errors++;
-        header('Location: form_register.php');
+        header("Refresh:0");
     }
     if(empty($confpass)){
         $errors++;
-        header('Location: form_register.php');
+        header("Refresh:0");
     }
     if($password != $confpass){
         $errors++;
-        header('Location: form_register.php');
+        header("Refresh:0");
     }
 
     if($errors == 0){
@@ -37,5 +37,6 @@ if(!empty($_POST)){
         $_SESSION = $email;
         header('Location: ../index.php');
     }
+    header("Location:../index.php");
 } 
 ?>

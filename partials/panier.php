@@ -8,6 +8,7 @@
 	add();
 	
 
+
 	function add(){
 		$verif = true;
 		$count = 0;
@@ -31,6 +32,7 @@
 		echo $newArtTitle;
 		$_SESSION[$title] = $newArtTitle ;
 	 	$_SESSION[$price] = $newArtPrix ;
+
 
 	 	
 	}
