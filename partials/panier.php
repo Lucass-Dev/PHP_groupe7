@@ -29,7 +29,9 @@
 		$newArtTitle = $_GET['title'];
 		$newArtPrix = $_GET['price'];
 		//echo $title;
-		echo $newArtTitle;
+		echo $newArtTitle."a bien été ajouté au panier";
+		echo '<br>';
+		echo "Vous pouvez retourner dans le shop";
 		$_SESSION[$title] = $newArtTitle ;
 	 	$_SESSION[$price] = $newArtPrix ;
 

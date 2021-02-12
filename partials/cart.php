@@ -6,7 +6,10 @@
 			<th>Prix</th>
 		</tr>
 	</table>
-<button>Validé le panier</button>
+	<form action="partials/recap.php" method="post">
+		<input type="submit" name="submit" value="Valider le panier"></input>
+	</form>
+
 
 
 <?php
