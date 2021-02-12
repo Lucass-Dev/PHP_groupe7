@@ -35,7 +35,7 @@
 		$_SESSION[$title] = $newArtTitle ;
 	 	$_SESSION[$price] = $newArtPrix ;
 
-
+	 		//test
 	 	
 	}
 	 
