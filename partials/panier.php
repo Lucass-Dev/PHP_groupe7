@@ -1,7 +1,7 @@
 <?php 
 	
 	
-	session_start();
+	require_once '../init.php';
 	//session_unset()
 	//session_destroy();
 	
@@ -29,7 +29,7 @@
 		$newArtTitle = $_GET['title'];
 		$newArtPrix = $_GET['price'];
 		//echo $title;
-		echo $newArtTitle."a bien été ajouté au panier";
+		echo $newArtTitle." a bien été ajouté au panier";
 		echo '<br>';
 		echo "Vous pouvez retourner dans le shop";
 		$_SESSION[$title] = $newArtTitle ;
@@ -38,8 +38,6 @@
 
 	 	
 	}
-
-
 	 
 ?>
 

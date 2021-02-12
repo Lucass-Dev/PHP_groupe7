@@ -204,10 +204,10 @@ tr
 #flex
 {
     display: flex;
-    width: 100%;
+    width: 50%;
     height:100%;
-    
-    
+    flex-direction: column;
+    margin-left:20%;
     justify-content: center;
 
 }

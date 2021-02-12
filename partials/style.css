@@ -424,3 +424,16 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+#searchBar{
+    background: none;
+    border:1px solid white;
+    height:50px;
+    border-radius: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+#searchBar:focus{
+    outline:none;
+}

@@ -5,7 +5,7 @@
     }
     
     $page = 'home';
-    $pages = array('home','cart','gestion_panel','gestion_product','gest_product_home');
+    $pages = array('home','cart','gestion_panel','gestion_product','gest_product_home','panier');
     if (isset($_GET['p'])) {
         if (in_array($_GET['p'], $pages)) {
             $page = $_GET['p'];

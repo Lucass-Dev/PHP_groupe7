@@ -204,10 +204,10 @@ tr
 #flex
 {
     display: flex;
-    width: 100%;
+    width: 50%;
     height:100%;
-    
-    
+    flex-direction: column;
+    margin-left:20%;
     justify-content: center;
 
 }
@@ -416,4 +416,17 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+#searchBar{
+    background: none;
+    border:1px solid white;
+    height:50px;
+    border-radius: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+#searchBar:focus{
+    outline:none;
 }

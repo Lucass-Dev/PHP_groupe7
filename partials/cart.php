@@ -13,9 +13,9 @@
 
 
 <?php
-session_start();
 
 function add(){
+		
 		$verif = true;
 		$count = 0;
 		$titleCount = 'title0';
